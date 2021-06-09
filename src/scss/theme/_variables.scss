@@ -90,13 +90,14 @@ $light: #E2EAED !default;
 //*-----------------------------------------------
 //|   Theme Colors
 //-----------------------------------------------*/
-$primary: $blue !default;
+$primary: $red !default;
 $secondary: $gray-900 !default;
 $success: $green !default;
 $info: $purple !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $light !default;
+$sky: $blue !default;
 $dark: $gray-1100 !default;
 
 $theme-colors: () !default;
@@ -110,6 +111,7 @@ $theme-colors: map-merge(
     'danger': $danger,
     'light': $light,
     'dark': $dark,
+    'sky': $sky
   ),
   $theme-colors
 );
