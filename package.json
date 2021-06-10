@@ -11,6 +11,7 @@
     "publish": "git subtree push --prefix live origin gh-pages",
     "localhost": "ssh -R 80:localhost:3000 ssh.localhost.run",
     "deploy": "npm run build && cp src/CNAME build && gh-pages -d build",
+    "deploy-w": "npm run build && copy src\\CNAME build && gh-pages -d build",
     "deploy:debug": "NODE_DEBUG=gh-pages npm run deploy"
   },
   "keywords": [],
