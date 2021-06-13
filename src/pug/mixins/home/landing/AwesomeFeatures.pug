@@ -23,7 +23,7 @@ append variables
       ]
 
 mixin Feature(config) 
-  .d-flex.align-items-center.mb-5
+  .d-flex.align-items-center.mb-5S
     div
       img.img-fluid(src=`${CWD}assets/img/illustrations/${config.image}` width="90"  alt='')
     .px-4
@@ -37,12 +37,12 @@ mixin AwesomeFeatures
         .col-md-5.col-lg-6.order-md-0.text-center.text-md-start
           img.img-fluid(src=`${CWD}assets/img/illustrations/feature-bg.png` width="550"  alt='')
         .col-md-7.col-lg-6.px-sm-5.px-md-0
-          h6.fw-bold.fs-4.display-3.lh-sm Awesome apps 
+          h6.fw-bold.fs-4.display-3.lh-sm Apps com Funcionalidades 
             br
-            |features
-          p.my-4 Increase productivity with a simple to-do app. app for 
+            |Incrivéis
+          p.my-4 Desenvolvemos aplicativos adequados para o  
             br.d-none.d-xl-block
-            |managing your personal budgets.
+            |seu modelo de negócio.
           each feature in afeatures
             +Feature(feature)
 
