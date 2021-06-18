@@ -1,9 +1,5 @@
-mixin FooterList(...items)
-  each item in items
-    li.list-inline-item.me3.me-sm-4
-      a.text-light.text-decoration-none(href='#!')
-        =item
-            
+
+
 mixin Footer
   +Section.py-8.bg-1000
     .row.flex-center
@@ -15,7 +11,15 @@ mixin Footer
     .row.flex-center
       .col-auto.mb-5
         ul.list-unstyled.list-inline.mb-0
-          +FooterList('Início','Key Features','Pricing','Testimonial','FAQ')
+          li.list-inline-item.me3.me-sm-4
+            a.text-light.text-decoration-none(href='/#')
+              ='Início'
+          li.list-inline-item.me3.me-sm-4
+            a.text-light.text-decoration-none(href='/#processo')
+              ='Processo'
+          li.list-inline-item.me3.me-sm-4
+            a.text-light.text-decoration-none(href='/#especialistas')
+              ='Especialistas'
 
     .row.flex-center
       .col-auto.mb-5
