@@ -55,7 +55,7 @@ html()&attributes(attrsHtml)
 
 
     block headScripts
-
+      script(src=`${CWD}assets/js/tagmanager.js`)
     = '\n\n'
     // ===============================================
     //    Stylesheets
@@ -94,6 +94,9 @@ html()&attributes(attrsHtml)
     block scripts
 
       script(src=`${CWD}assets/js/theme.js`)
+      noscript
+        iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-PJXSF58"
+height="0" width="0" style="display:none;visibility:hidden")
 
     = '\n'
 
